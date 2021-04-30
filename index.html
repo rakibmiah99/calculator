@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Javascript Calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <head>
+        <div class="box-container">
+            <div class="box">
+                <p class="title">Calculator</p>
+                <input type="text" id="input" disabled>
+                <div class="calc-body">
+                    <div class="number">
+                        <div class="number-section">
+                            <button  type="button"  onclick="addSymbol(this)" value="(" id="s-paranthesis">(</button>&nbsp;
+                            <button  type="button"  onclick="addSymbol(this)" value=")" id="e-paranthesis">)</button>
+                            <button   type="button" onclick="cross();" value = "x" id="parcent">x</button>
+                        </div>
+                        <div class="number-section">
+                            <button   type="button" onclick="addSymbol(this)" value="1" id="one">1</button>
+                            <button   type="button" onclick="addSymbol(this)" value="2" id="two">2</button>
+                            <button   type="button" onclick="addSymbol(this)" value = "3" id="three">3</button>
+                        </div>
+                       <div class="number-section">
+                            <button   type="button" onclick="addSymbol(this)" value="4" id="four">4</button>
+                            <button   type="button" onclick="addSymbol(this)" value="5" id="five">5</button>
+                            <button   type="button" onclick="addSymbol(this)" value="6" id="six">6</button>
+                        </div>
+                        <div class="number-section">
+                            <button   type="button" onclick="addSymbol(this)" value="7" id="seven">7</button>
+                            <button  type="button"  onclick="addSymbol(this)" value="8" id="eight">8</button>
+                            <button   type="button" onclick="addSymbol(this)" value="9" id="nine">9</button>
+                        </div>
+                        <div class="number-section">
+                            <button  type="button" onclick="addSymbol(this)" value="." id="dot">&nbsp;.</button>
+                            <button  type="button" onclick="addSymbol(this)" value="0" id="zero">0</button>
+                            <button  type="button" onclick="result()" value="=" id="equal">=</button>
+                        </div>
+                    </div>
+                    <div class="math-function">
+                        <button  type = "button" onclick = "reset()" id="reset">CE</button>
+                        <button  id="plus" type = "button" onclick="addSymbol(this)" value="+" >+</button>
+                        <button  id="minus" type = "button" onclick="addSymbol(this)" value="-">-</button>
+                        <button  id="devide" type = "button" onclick="addSymbol(this)" value="/">/</button>
+                        <button  id="multi" type = "button" onclick="addSymbol(this)" value="*">*</button>
+                    </div>
+                    
+                
+                </div>
+                <div style="text-align: center;font-size: 12px;"><p>Created by: <b>Md.Rakib Miah</b></p></div>
+            </div>
+        </div>
+        
+        <script src="script.js"></script>
+    </head>
+</html>
